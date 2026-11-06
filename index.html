@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Unreal 8기 최종 프로젝트 박람회</title>
+<title>Unreal 9기 최종 프로젝트 박람회</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -176,6 +176,7 @@
   }
   .card:hover { transform: translateY(-6px); box-shadow: 0 16px 34px rgba(0,0,0,0.4); border-color: var(--accent); }
   .card .thumb { width: 100%; aspect-ratio: 16 / 10; background: #22222a center/cover no-repeat; position: relative; overflow: hidden; }
+  .card .thumb-empty { display: flex; align-items: center; justify-content: center; color: var(--ink-soft); font-size: 14px; font-weight: 600; }
   .card .thumb video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
   .card .thumb::after {
     content: "브로셔 보기 →"; position: absolute; inset: auto 0 0 0; padding: 10px 16px;
@@ -287,20 +288,20 @@
 <body>
 
 <nav class="nav">
-  <div class="brand">Unreal 8th EXPO</div>
+  <div class="brand">Unreal 9th EXPO</div>
   <div class="nav-links">
     <a href="#projects">전시 프로젝트</a>
     <a href="#guide">관람 안내</a>
     <a href="#about">소개</a>
-    <a class="nav-cta" href="https://zep.us/@Unreal8" id="nav-zep" target="_blank" rel="noopener">ZEP 입장</a>
+    <a class="nav-cta" href="https://zep.us/@Unreal9" id="nav-zep" target="_blank" rel="noopener">ZEP 입장</a>
   </div>
 </nav>
 
 <header class="hero">
   <span class="badge" id="hero-badge">COMING SOON</span>
-  <h1 class="hero-title">Unreal 8th EXPO</h1>
+  <h1 class="hero-title">Unreal 9th EXPO</h1>
   <div class="hero-meta">
-    <span>📅 2026. 10. 15 (목)</span>
+    <span>📅 2026. 12. 10 (목)</span>
     <span>⏰ 19:00 — 21:00</span>
     <span>📍 ZEP</span>
   </div>
@@ -312,14 +313,14 @@
 
   <div class="ticket">
     <div class="stub">
-      <div class="no">8th</div>
+      <div class="no">9th</div>
       <div class="dev">UNREAL DEVELOPMENT</div>
       <div class="expo">EXPO 2026</div>
     </div>
     <div class="body">
       <div class="fields">
         <div class="f"><div class="k">EVENT</div><div class="v"><span class="ev-full">최종 프로젝트 박람회</span><span class="ev-short">최종 박람회</span></div></div>
-        <div class="f"><div class="k">DATE</div><div class="v">OCT 15, 2026</div></div>
+        <div class="f"><div class="k">DATE</div><div class="v">DEC 10, 2026</div></div>
         <div class="f"><div class="k">TIME</div><div class="v">19:00 ~ 21:00</div></div>
         <div class="f"><div class="k">VENUE</div><div class="v">ZEP</div></div>
       </div>
@@ -333,15 +334,15 @@
     <span class="notch b"></span>
   </div>
 
-  <a class="cta" id="zep-btn" href="https://zep.us/@Unreal8" target="_blank" rel="noopener">🚀 ZEP 입장하기</a>
+  <a class="cta" id="zep-btn" href="https://zep.us/@Unreal9" target="_blank" rel="noopener">🚀 ZEP 입장하기</a>
 </header>
 
 <section class="block" id="projects">
   <div class="section-head reveal">
     <span class="en">PROJECTS</span>
     <h2>전시 프로젝트</h2>
-    <p class="projects-note">Unreal 8기 대원들의 프로젝트를 소개합니다.<br>8개월간 최선을 다해 배우고 성장한 결과물을<br class="m-br"> 한 자리에 모았습니다.</p>
-    <p>이미지를 누르면 팀별 브로셔 페이지로 이동합니다.</p>
+    <p class="projects-note">Unreal 9기 대원들의 프로젝트를 소개합니다.<br>8개월간 최선을 다해 배우고 성장한 결과물을<br class="m-br"> 한 자리에 모았습니다.</p>
+    <p>카드를 누르면 팀별 브로셔 페이지로 이동합니다.</p>
   </div>
   <div class="grid" id="project-grid"></div>
 </section>
@@ -385,7 +386,7 @@
       반드시 <b>중앙 박람회장 문</b>으로 들어와 박람회장에 입장해 주세요.</div>
     </div>
     <div class="guide-cta reveal">
-      <a class="cta" href="https://zep.us/@Unreal8" id="zep-btn2" target="_blank" rel="noopener">🚀 ZEP 입장하기</a>
+      <a class="cta" href="https://zep.us/@Unreal9" id="zep-btn2" target="_blank" rel="noopener">🚀 ZEP 입장하기</a>
     </div>
   </div>
 </section>
@@ -408,27 +409,21 @@
 </section>
 
 <footer>
-  Unreal 기반 3D 게임 개발자 양성과정 8회차<br>
+  Unreal 기반 3D 게임 개발자 양성과정 9회차<br>
   최종 프로젝트 박람회
 </footer>
 
 <script>
   const TEAMS = [
-    { team: "1조", title: "SPLASH AND TRASH", image: "img/team1.png", notionUrl: "https://app.notion.com/p/teamsparta/8-01-SPLASH-AND-TRASH-3b12dc3ef51480158b7cea20dcb3634b" },
-    { team: "2조", title: "Naia Unbound", image: "img/team2.png", notionUrl: "https://app.notion.com/p/3b12dc3ef51480c5b7f7e2fe085554ea" },
-    { team: "3조", title: "EmberRoad", image: "img/team3.png", notionUrl: "https://app.notion.com/p/3b12dc3ef5148015be94feeb1af78ed8" },
-    { team: "4조", title: "DustBase", image: "img/team4.png", notionUrl: "https://app.notion.com/p/3b12dc3ef5148024b79cf77ec9eac28a" },
-    { team: "5조", title: "Deep Deeper", image: "img/team5.png", notionUrl: "https://app.notion.com/p/teamsparta/8-05-Deep-Deeper-3b12dc3ef51480b79fa8c962009b1905?v=32f2dc3ef5148074bffa000ce95cce75&source=copy_link" },
-    { team: "6조", title: "Dance of Shadows", image: "img/team6.png", notionUrl: "https://app.notion.com/p/teamsparta/8-6-Dance-of-Shadows-3b12dc3ef514801d8c96c8f8d91faf2c" },
-    { team: "7조", title: "AlmA Asension", image: "img/team7.png", notionUrl: "https://app.notion.com/p/teamsparta/8-7-AlmA-Asension-3b12dc3ef514807ea756c4197c42d8b1" },
-    { team: "8조", title: "Strike Forge", image: "img/team8.gif", notionUrl: "https://app.notion.com/p/teamsparta/8-8-Strike-Forge-3b12dc3ef5148020bea1fc36037991da" },
-    { team: "9조", title: "Falling Apart", image: "img/team9.png", notionUrl: "https://app.notion.com/p/teamsparta/8-9-Falling-Apart-3b12dc3ef51480d2ac04f4b5c84e4f37?source=copy_link" },
-    { team: "10조", title: "CreatePotion", image: "img/team10.png", notionUrl: "https://app.notion.com/p/teamsparta/8-10-CreatePotion-3b12dc3ef5148081b43ee4a46570be16?source=copy_link" },
-    { team: "11조", title: "Crosswalk", image: "img/team11.png", notionUrl: "https://app.notion.com/p/3b12dc3ef51480e1a725cf3e8956cd06" },
-    { team: "12조", title: "미열", image: "img/team12.png", notionUrl: "https://app.notion.com/p/teamsparta/8-12-3f42dc3ef51480748072c6128279fdaf" },
-    { team: "13조", title: "Festa Fiesta", image: "img/team13.png", notionUrl: "https://app.notion.com/p/3b12dc3ef514808a9247c952c9ecf639" },
-    { team: "14조", title: "이세계 편의점", image: "img/team14.gif", notionUrl: "https://app.notion.com/p/teamsparta/8-14-3b12dc3ef51480939c61cf3a39709f0a?source=copy_link" },
-    { team: "", title: "Outbreak Breaker", image: "img/team15.png", notionUrl: "https://app.notion.com/p/teamsparta/Outbreak-Breaker-3b22dc3ef514807aa863d1427ecbc153?v=32f2dc3ef5148074bffa000ce95cce75&source=copy_link" },
+    { team: "1조", title: "PADO", notionUrl: "https://app.notion.com/p/teamsparta/3e92dc3ef51480b4ad4bef954fbc9a7d?source=copy_link" },
+    { team: "2조", title: "바이브 호텔", notionUrl: "https://app.notion.com/p/teamsparta/3e92dc3ef514800fa0d2c1a643f862ab?source=copy_link" },
+    { team: "3조", title: "투명드래곤", notionUrl: "https://app.notion.com/p/teamsparta/3e92dc3ef514806ba057d3bd14214aa3?source=copy_link" },
+    { team: "4조", title: "떡잎마을방범대", notionUrl: "https://app.notion.com/p/teamsparta/3e92dc3ef5148087ba9bfdf996d34104?source=copy_link" },
+    { team: "5조", title: "코덱스의 어린양들", notionUrl: "https://app.notion.com/p/teamsparta/3e92dc3ef51480a0a72ff99c2149d6bd?source=copy_link" },
+    { team: "6조", title: "무한상사", notionUrl: "https://app.notion.com/p/teamsparta/3e92dc3ef51480eea5c9ccf844e44ba5?source=copy_link" },
+    { team: "7조", title: "위치헌터", notionUrl: "https://app.notion.com/p/teamsparta/3e92dc3ef514806d9f0cd2fc1620c328?source=copy_link" },
+    { team: "8조", title: "메카공룡절단괴이소녀", notionUrl: "https://app.notion.com/p/teamsparta/3e92dc3ef51480efa152d4a140bc26cf?source=copy_link" },
+
   ];
 
   // ---- 전시 프로젝트 카드 ----
@@ -437,10 +432,7 @@
     const a = document.createElement('a');
     a.className = 'card reveal';
     a.href = p.notionUrl; a.target = '_blank'; a.rel = 'noopener';
-    const isVideo = /\.mp4$/i.test(p.image);
-    const thumb = isVideo
-      ? `<div class="thumb"><video src="${p.image}" autoplay loop muted playsinline></video></div>`
-      : `<div class="thumb" style="background-image:url('${p.image}')"></div>`;
+    const thumb = `<div class="thumb thumb-empty">이미지 준비 중</div>`;
     a.innerHTML = `
       ${thumb}
       <div class="info">
@@ -450,9 +442,9 @@
     grid.appendChild(a);
   });
 
-  // ---- ZEP 입장 상태 (시작 19:00 ~ 종료 21:00, 10월 15일 KST) ----
-  const EVENT_START = new Date('2026-10-15T19:00:00+09:00');
-  const EVENT_END = new Date('2026-10-15T21:00:00+09:00');
+  // ---- ZEP 입장 상태 (시작 19:00 ~ 종료 21:00, 12월 10일 KST) ----
+  const EVENT_START = new Date('2026-12-10T19:00:00+09:00');
+  const EVENT_END = new Date('2026-12-10T21:00:00+09:00');
   const NOW = new Date();
   const isBefore = NOW < EVENT_START;
   const isLive = NOW >= EVENT_START && NOW < EVENT_END;
@@ -461,9 +453,9 @@
   // 히어로 배지
   const badge = document.getElementById('hero-badge');
   if (badge) {
-    if (isLive) { badge.textContent = 'NOW SHOWING · 2026.10.15'; badge.classList.add('live'); }
-    else if (isClosed) { badge.textContent = '박람회 종료 · 2026.10.15'; }
-    else { badge.textContent = 'COMING SOON · 10.15 19:00'; }
+    if (isLive) { badge.textContent = 'NOW SHOWING · 2026.12.10'; badge.classList.add('live'); }
+    else if (isClosed) { badge.textContent = '박람회 종료 · 2026.12.10'; }
+    else { badge.textContent = 'COMING SOON · 12.10 19:00'; }
   }
 
   // ZEP 입장 버튼 3개
@@ -477,7 +469,7 @@
     } else if (isBefore) {
       el.addEventListener('click', e => {
         e.preventDefault();
-        alert('아직 박람회 시간이 아니에요.\n10월 15일 19:00부터 입장하실 수 있습니다.');
+        alert('아직 박람회 시간이 아니에요.\n12월 10일 19:00부터 입장하실 수 있습니다.');
       });
     }
   });
